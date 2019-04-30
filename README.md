@@ -10,7 +10,7 @@
 
 ## Introduction
 
-As programmers, we ask wonder about the world, come up with questions and then
+As programmers, we wonder about the world, come up with questions and then
 ask a computer to help us manipulate data to find answers. Many of those
 questions can be resolved by "polling" every member in a collection. We'd
 typically "poll" each number in the collection and feed that value to a
@@ -39,7 +39,7 @@ When we say "work" we mean the evaluation of some expression that uses the
 
 We call the built-in methods provided by Ruby that "visit" each element or pair
 in a collection, test those elements or pairs with "work," and then return a
-new collection **or** a value "Enumerables." In this module we'll learn to use
+new collection **or** a value "Enumerables." In this module, we'll learn to use
 Ruby's Enumerable methods to answer the type of question which involves
 "polling each member."
 
@@ -54,15 +54,16 @@ Enumerable methods or "Enumerables" is:
 2. Based on the number visit each one by its number in the series (Latin: _ex
    numero_, the source of "enumerate") or "enumerate" the collection
 3. Do some "work" or "test" the elements or pairs in the collection
-4. THEN
-  1. Accumulate those elements after work was applied into a new collection
+4. THEN:
+  1. Accumulate those elements-after-work-was-applied into a new collection
   2. _OR_, determine some special value like: maximum, minimum, `true` if all
 values were truthy, `true` if any value was truthy, `true` if no values were
 truthy, etc.
 
-This template applies **to all Enumerable methods** therefore we call it the
-"Character of Enumerable Methods." This isn't a term you'll hear programmers
-use day-to-day, but all of them know that all Enumerables follow this template.
+This template applies **to all Enumerable methods**. We call it the "Character
+of Enumerable Methods." This isn't a term you'll hear programmers use
+day-to-day, but all of them know that all Enumerables follow this template and
+have this "character."
 
 > **LOOKING AHEAD**: In fact, as you become more experienced with creating new
 > things in Ruby (`StudentRoster`s or `PayrollWeek`s) you'll learn to make it
@@ -85,13 +86,13 @@ Doing some research, he realized he could reduce airborne infection risk by
 _wearing a surgical mask_. But he didn't want to wear one all the time so he
 decided to implement the following modification to his behavior:
 
-> **PSEUDOCODE**: Below we're going to use "pseudocode." Its something that
+> **PSEUDOCODE**: Below we're going to use "pseudocode." It's something that
 > looks a bit like code, but we're not expecting that it would run, it's just a
 > convenient way to express a problem's solution in a way like code, but far
 > less demanding. It's common to find programmers "sketching" a problem or a
-> phenomenon because it's usually shorter to write than English and, once you
-> learn programming, using programming to communicate, even in "normal life"
-> settings becomes handy.
+> phenomenon in pseudocode because it's usually shorter to write than English
+> and, once you learn programming, it's a handy way to communicate with other
+> programmers.
 
 ```ruby
 while on_the_train
@@ -106,7 +107,7 @@ this:
 
 ```ruby
 def i_hear_a_sick_sound(passengers)
-  # Given a collection of passengers' sounds ["coughing", "yawning", "sneezing", "singing jamaican traditional folksong"]
+  # Given a collection of passengers' sounds ["coughing", "yawning", "sneezing", "singing Jamaican traditional folksong"]
   # If any of them are sick sounds: cough, yawn
   # return `true`; else, return `false`
 end
@@ -134,7 +135,7 @@ This is but one tiny example. If you don't live in a big city with public
 transport, maybe you "poll" all the cars at a four-way stop sign to see who
 arrived first. Perhaps you're a bit lax on your laundry and you "sniff test"
 all the clothes on the floor to find one that's least-offensive.  We use
-Enumerables all the time in our real life! They're everywhere in life so
+Enumerables all the time in real life! They're everywhere in life so
 they're very useful to have in code as well.
 
 ## Consult Ruby's Enumerable Documentation
@@ -150,7 +151,7 @@ at the list of Methods on the left. You'll see what kind of activities follow
 the Enumerable character. Pick a few methods that you find interesting and look
 at the code examples.  You don't need to understand the code fully here, just
 appreciate what kinds of things you'll be able to do with collections. What are
-the return values for applying such-and-such Enumerable.
+the return values for applying such-and-such Enumerable?
 
 ### Enumeration versus Enumerables
 
@@ -168,7 +169,7 @@ with Enumerable methods, we have to understand the challenging coding ideas of:
 
 * capturing work (but not _doing_ it) using a thing called a _block_
 * doing the work and passing it arguments based on visiting each element or
-  pair in the collection, called _yielding_ to a block
+  pair in the collection. This is called _yielding_ to a block
 * gathering a new collection **or** combining the individual results into an
   aggregate result
 
