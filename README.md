@@ -51,7 +51,7 @@ elements or pairs present in the collection. The essential character of all
 Enumerable methods or "Enumerables" is:
 
 1. Given a collection
-2. Based on the number visit each one by its number in the series (Latin: _ex
+2. Based on the number, visit each one by its number in the series (Latin: _ex
    numero_, the source of "enumerate") or "enumerate" the collection
 3. Do some "work" or "test" the elements or pairs in the collection
 4. THEN:
@@ -67,7 +67,7 @@ have this "character."
 
 > **LOOKING AHEAD**: In fact, as you become more experienced with creating new
 > things in Ruby (`StudentRoster`s or `PayrollWeek`s) you'll learn to make it
-> possible to make them answer Enumerable questions. To do so you'll have to
+> possible to make them answer Enumerable questions. To do so, you'll have to
 > have this "Character" or "template" in the back of your mind.
 
 ## Pseudocode a Real-World Use of Enumerables
@@ -134,8 +134,8 @@ end
 This is but one tiny example. If you don't live in a big city with public
 transport, maybe you "poll" all the cars at a four-way stop sign to see who
 arrived first. Perhaps you're a bit lax on your laundry and you "sniff test"
-all the clothes on the floor to find one that's least-offensive.  We use
-Enumerables all the time in real life! They're everywhere in life so
+all the clothes on the floor _until_ you find the one that's least-offensive.  We 
+use Enumerables all the time in real life! They're everywhere in life so
 they're very useful to have in code as well.
 
 ## Consult Ruby's Enumerable Documentation
@@ -167,10 +167,10 @@ methods. Specifically, the code can get confusing when we need to _abstract_
 out the "work" that we should apply to each element. To feel truly comfortable
 with Enumerable methods, we have to understand the challenging coding ideas of:
 
-* capturing work (but not _doing_ it) using a thing called a _block_
-* doing the work and passing it arguments based on visiting each element or
+* Capturing work (but not _doing_ it) using a thing called a _block_
+* Doing the work and passing it arguments based on visiting each element or
   pair in the collection. This is called _yielding_ to a block
-* gathering a new collection **or** combining the individual results into an
+* Gathering a new collection **or** combining the individual results into an
   aggregate result
 
 If this sounds complex, don't worry: we've built a stair-step of lessons to
