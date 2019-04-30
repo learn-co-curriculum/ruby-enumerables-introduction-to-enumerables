@@ -76,8 +76,8 @@ accordance with the "Character of Enumerable Methods."
 
 True story: someone close to us got married last year. In anticipation of his
 destination wedding and fabulous honeymoon in Italy, he was determined to
-reduce his chances of getting sick. The only problem, he takes the New York
-City subway every day to work.
+reduce his chances of getting sick. The only problem, he takes public transit
+every day to work.
 
 His **Question** was: "How can I avoid being sick for these special occasions?"
 
@@ -94,7 +94,7 @@ decided to implement the following modification to his behavior:
 > settings becomes handy.
 
 ```ruby
-while on_the_subway
+while on_the_train
   if i_hear_a_sick_sound
     my_mask_status = true
   end
@@ -115,7 +115,7 @@ end
 If we were to encode this we might write the (real code, not pseudocode) the
 method as:
 
-```ruby
+```ruby 
 def i_hear_a_sick_sound(passengers_sounds)
   i = 0 # set up a i for the enumeration of the passengers collection
   while i < passengers.length do # a loop for each passenger
