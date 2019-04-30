@@ -24,7 +24,7 @@ Here are some real-world questions:
   than an argument a user might provide?"
 * "Which painting is the most valuable?"
 * "Which painting is the least value?"
-* "Do any of these unvaccinated children have a wet cough?"
+* "Do any of these children have a wet cough?"
 
 These real-world questions that involve:
 
