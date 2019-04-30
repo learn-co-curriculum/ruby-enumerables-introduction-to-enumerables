@@ -37,11 +37,14 @@ These real-world questions that involve:
 When we say "work" we mean the evaluation of some expression that uses the
 "current element."
 
-We call the built-in methods provided by Ruby that "visit" each element or pair
-in a collection, test those elements or pairs with "work," and then return a
-new collection **or** a value "Enumerables." In this module, we'll learn to use
-Ruby's Enumerable methods to answer the type of question which involves
-"polling each member."
+"Enumerable" is that we call a method provided by Ruby that:
+
+1. "visits" each element or pair in a collection
+2. tests those elements or pairs with "work"
+3. and then returns a new collection **or** a value
+
+In this module, we'll learn to use Ruby's Enumerable methods to answer the type
+of question which involves "polling each member."
 
 ## Define the "Character of Enumerable Methods"
 
@@ -113,7 +116,7 @@ def i_hear_a_sick_sound(passengers)
 end
 ```
 
-If we were to encode this we might write the (real code, not pseudocode) the
+If we were to encode this, we might write the (real code, not pseudocode) the
 method as:
 
 ```ruby 
@@ -153,7 +156,7 @@ at the code examples.  You don't need to understand the code fully here, just
 appreciate what kinds of things you'll be able to do with collections. What are
 the return values for applying such-and-such Enumerable?
 
-### Enumeration versus Enumerables
+### Enumeration Versus Enumerables
 
 You might think, "OK, I get it, Enumerables follow this 'Character of
 Enumerables' thing and that seems sensible enough. What's so hard here?"
