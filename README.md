@@ -6,7 +6,6 @@
 * Define the "Character of Enumerable Methods"
 * Pseudocode a Real-World Use of Enumerables
 * Consult Ruby's Enumerable Documentation
-* Consult Ruby's Enumerable Documentation
 
 ## Introduction
 
