@@ -25,7 +25,7 @@ Here are some real-world questions:
 * "Which painting is the least value?"
 * "Do any of these children have a wet cough?"
 
-These real-world questions that involve:
+These real-world questions involve:
 
 1. Finding a collection of data, typically stored in an `Array` or `Hash`
 2. Visiting each element (`Array`) or pair (`Hash`) in the collection
