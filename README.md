@@ -110,7 +110,7 @@ this:
 ```ruby
 def i_hear_a_sick_sound(passengers)
   # Given a collection of passengers' sounds ["coughing", "yawning", "sneezing", "singing Jamaican traditional folksong"]
-  # If any of them are sick sounds: cough, yawn
+  # If any of them are sick sounds: coughing, sneezing
   # return `true`; else, return `false`
 end
 ```
