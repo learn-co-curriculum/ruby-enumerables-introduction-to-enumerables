@@ -22,7 +22,7 @@ Here are some real-world questions:
 * "What numbers in this data set are larger than 200? Larger than 2,000? Larger
   than an argument a user might provide?"
 * "Which painting is the most valuable?"
-* "Which painting is the least value?"
+* "Which painting is the least valuable?"
 * "Do any of these children have a wet cough?"
 
 These real-world questions involve:
