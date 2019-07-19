@@ -63,7 +63,7 @@ so that we provide meaning or abstraction. Here's some Ruby-like pseudocode:
 
 ```ruby
 def values_greater_than(dividing_number, array_of_numbers)
-  # visit each member in array of numbers, "collect" it, if its value is greater than `dividing_number`
+  # visit each member in array_of_numbers, "collect" it, if its value is greater than `dividing_number`
 end
 
 values_greater_than(200, [200, 2000, 3000, 0]) #=> [2000, 3000]
