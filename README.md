@@ -11,12 +11,43 @@
 
 As programmers, we wonder about the world, come up with questions and then
 ask a computer to help us manipulate data to find answers. Many of those
-questions can be resolved by "polling" every member in a collection. We'd
-typically "poll" each number in the collection and feed that value to a
-calculation (French Word For _x_) _or_ aggregate that value into a running
-value (like a total).
+questions can be resolved by either:
 
-Here are some real-world questions:
+1. "Polling" every member in a collection and collecting the results into a
+   new collection through a process called "mapping" (or)
+2. "Polling" every member in a collection and joining those poll's results together
+   into a single value through a process called "reducing"
+
+Despite these fancy names of "map" and "reduce" we "map" and "reduce" all the
+time.
+
+For example, we might ask a collection of staff
+members whether they want "Sushi Menu 1," "Sushi Menu 2," or "vegan option"
+for the upcoming team meeting. Think back to our first paragraph: "polling
+every member in a collection and collecting the results into a new collection."
+That's "mapping," but you might not have called it by that name before.
+
+Or, what if we asked everyone how much cash they have on hand so that we
+can tip the delivery person for our team lunch (forgot to plan on that one!).
+We'll "poll each member in a collection and join those results (by addition)
+together" to find out how much cash we have between us. That's
+"reducing," but you might not have called it by that name before!
+
+### Uses of "map" and "reduce"
+
+Oftentimes we "map" or "reduce" a collection so that we can ask a question
+of that new collection.
+
+* Did more than half of the staff choose the vegan option?
+* Is the collected cash on hand greater or equal to 20% of the bill for staff lunch?
+
+Mapping and reducing let us take "general data" and "groom it" to become
+the data we need to answer a question.
+
+### Think About It
+
+Here are some real-world questions. See if you can identify whether to "map"
+or "reduce" these collections.
 
 * "If these projected profits turned to losses, what would those losses be?"
 * "What numbers in this data set are larger than 200? Larger than 2,000? Larger
@@ -25,22 +56,32 @@ Here are some real-world questions:
 * "Which painting is the least valuable?"
 * "Do any of these children have a wet cough?"
 
-These real-world questions involve:
+### Wrapping Map and Reduce
 
-1. Finding a collection of data, typically stored in an `Array` or `Hash`
-2. Visiting each element (`Array`) or pair (`Hash`) in the collection
-3. Doing some "work" with that element or pair
-4. Returning a new collection **or** a new value based on the "work" that
-   touched each element
+It's very common to put a "map" operation or a "reduce" operation _inside_ a method
+so that we provide meaning or abstraction. Here's some Ruby-like pseudocode:
 
-When we say "work" we mean the evaluation of some expression that uses the
-"current element."
+```ruby
+def values_greater_than(dividing_number, array_of_numbers)
+  # visit each member in array_of_numbers, "collect" it, if its value is greater than `dividing_number`
+end
 
-"Enumerable" is that we call a method provided by Ruby that:
+values_greater_than(200, [200, 2000, 3000, 0]) #=> [2000, 3000]
+values_greater_than(5000, [200, 2000, 3000, 0]) #=> []
+```
+
+"Map" and "reduce" help you accomplish powerful work. By putting that work inside of
+a meaningful method name, you help other programmers understand your conversation
+with the computer on how to solve a problem. Also, by wrapping these operations
+we've just seen how we can make them more abstract.
+
+### The Word "Enumerable"
+
+"Enumerable" is what we call a method provided by Ruby that:
 
 1. "visits" each element or pair in a collection
-2. tests those elements or pairs with "work"
-3. and then returns a new collection **or** a value
+2. tests each of those elements or calculates something with them and returns a result
+3. and which ***then*** returns a new collection of those returned results **or** which accumulates those returned results to a single value
 
 In this module, we'll learn to use Ruby's Enumerable methods to answer the type
 of question which involves "polling each member."
@@ -54,7 +95,7 @@ Enumerable methods or "Enumerables" is:
 
 1. Given a collection
 2. Based on the number, visit each one by its number in the series (Latin: _ex
-   numero_, the source of "enumerate") or "enumerate" the collection
+   numero_, the source of "enumerate")
 3. Do some "work" or "test" the elements or pairs in the collection
 4. THEN:
   1. Accumulate those elements-after-work-was-applied into a new collection
@@ -69,7 +110,7 @@ have this "character."
 
 > **LOOKING AHEAD**: In fact, as you become more experienced with creating new
 > things in Ruby (`StudentRoster`s or `PayrollWeek`s) you'll learn to make it
-> possible to make them answer Enumerable questions. To do so, you'll have to
+> possible to make _them_ answer Enumerable questions. To do so, you'll have to
 > have this "Character" or "template" in the back of your mind.
 
 ## Pseudocode a Real-World Use of Enumerables
