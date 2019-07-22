@@ -18,20 +18,27 @@ questions can be resolved by either:
 2. "Polling" every member in a collection and joining those poll's results together
    into a single value through a process called "reducing"
 
-Despite these fancy names of "map" and "reduce" we "map" and "reduce" all the
-time.
+In fact, Twitter user Steven Luscher managed to explain these ideas in a 
+single tweet! 
 
-For example, we might ask a collection of staff
+![Enumerables in a Tweet](https://curriculum-content.s3.amazonaws.com/ruby-enumerables/introduction-to-enumerables/enumerables_in_a_tweet.png)
+
+[_Original Source_](https://twitter.com/steveluscher/status/741089564329054208)
+
+For example, we might work through a collection of food and apply the process
+of "heat the thing" to each and, in so doing, create a collection of new
+things. In Steven's example, we turn "maize", "cow", and "chicken"into
+"popcorn", "hamburger", and "fried egg." Or think about asking a collection of staff
 members whether they want "Sushi Menu 1," "Sushi Menu 2," or "vegan option"
-for the upcoming team meeting. Think back to our first paragraph: "polling
+for the upcoming team meeting. In both these cases we're polling
 every member in a collection and collecting the results into a new collection."
 That's "mapping," but you might not have called it by that name before.
 
-Or, what if we asked everyone how much cash they have on hand so that we
-can tip the delivery person for our team lunch (forgot to plan on that one!).
-We'll "poll each member in a collection and join those results (by addition)
-together" to find out how much cash we have between us. That's
-"reducing," but you might not have called it by that name before!
+In Steven's example, after we apply the "eat" process to "fried egg" and "popcorn".
+The result of that eat process is...uh...combined and processed food, or "💩". For
+a slightly less gastric example, what if we asked our classmates how much cash they have
+in their pocket so that we can "reduce" each person's money to a total which we can use to buy
+our favorite teacher a nice present. That's "reducing," but you might not have called it by that name before!
 
 ### Uses of "map" and "reduce"
 
