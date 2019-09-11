@@ -89,9 +89,9 @@ we've just seen how we can make them more abstract.
 
 "Enumerable" is what we call a method provided by Ruby that:
 
-1. "visits" each element or pair in a collection
-2. tests each of those elements or calculates something with them and returns a result
-3. and which ***then*** returns a new collection of those returned results **or** which accumulates those returned results to a single value
+1. "visits" each element or pair in a collection and then...
+2. tests each of those elements or calculates something with them and returns a result and which ***then***...
+3. returns a new collection of those returned results **or** which accumulates those returned results to a single value
 
 In this module, we'll learn to use Ruby's Enumerable methods to answer the type
 of question which involves "polling each member."
@@ -110,18 +110,13 @@ Enumerable methods or "Enumerables" is:
 4. THEN:
   1. Accumulate those elements-after-work-was-applied into a new collection
   2. _OR_, determine some special value like: maximum, minimum, `true` if all
-values were truthy, `true` if any value was truthy, `true` if no values were
-truthy, etc.
+  values were truthy, `true` if any value was truthy, `true` if no values were
+  truthy, etc.
 
 This template applies **to all Enumerable methods**. We call it the "Character
 of Enumerable Methods." This isn't a term you'll hear programmers use
 day-to-day, but all of them know that all Enumerables follow this template and
 have this "character."
-
-> **LOOKING AHEAD**: In fact, as you become more experienced with creating new
-> things in Ruby (`StudentRoster`s or `PayrollWeek`s) you'll learn to make it
-> possible to make _them_ answer Enumerable questions. To do so, you'll have to
-> have this "Character" or "template" in the back of your mind.
 
 ## Pseudocode a Real-World Use of Enumerables
 
