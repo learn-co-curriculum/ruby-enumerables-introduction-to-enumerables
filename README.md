@@ -243,3 +243,5 @@ Process a collection by visiting each one and do "work" on it in order to
 return a new collection **or** an aggregate value. Understanding enumeration in
 the big picture is the first step to understanding Enumerable methods, which
 we'll begin to study in the next lesson.
+
+[enumdoc]: https://ruby-doc.org/core-2.6.5/Enumerable.html
