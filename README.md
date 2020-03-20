@@ -92,7 +92,22 @@ is_anyone_vegetarian?(["none", "paleo", "dairy free", "none"]) #=> false
 is_anyone_vegetarian?(["foo", "bar", "bin", "bat"]) #=> false
 ```
 
-This is but one tiny example. If you aren't into cooking, maybe you "poll" all
+The Enumerable equivalent to the `while` loop above would be to use the `any?`
+Enumerable on the list of dietary restrictions:
+
+```rb
+def is_anyone_vegetarian?(list_of_dietary_restrictions)
+  list_of_dietary_restrictions.any? do |restriction|
+    restriction == "vegetarian"
+  end
+end
+
+is_anyone_vegetarian?(["vegetarian", "none", "paleo", "dairy free", "none"]) #=> true
+is_anyone_vegetarian?(["none", "paleo", "dairy free", "none"]) #=> false
+is_anyone_vegetarian?(["foo", "bar", "bin", "bat"]) #=> false
+```
+
+This is but one example. If you aren't into cooking, maybe you "poll" all
 the cars at a four-way stop sign to see who arrived first. Perhaps you're a bit
 lax on your laundry and you "sniff test" all the clothes on the floor _until_
 you find the one that's least-offensive.  We use Enumerables all the time in
