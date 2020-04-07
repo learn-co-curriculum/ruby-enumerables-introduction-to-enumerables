@@ -164,6 +164,8 @@ Check out the [Using Pry][] lesson to review Pry further.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uv6fvdKXAnM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+[Debugging](https://youtu.be/uv6fvdKXAnM)
+
 Try using Pry in the next lab!
 
 [Using Pry]: https://github.com/learn-co-curriculum/reading-errors-and-debugging-using-pry
