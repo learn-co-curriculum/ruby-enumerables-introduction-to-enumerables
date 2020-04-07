@@ -154,22 +154,6 @@ With Ruby's Enumerables on your side, you'll tear through complex questions
 with ease &mdash; and surprisingly few keystrokes! We'll start our exploration
 in the next lesson.
 
-## Video Review: Debugging
-
-Before we embark on exploring Enumerables any further, it is important that we take a
-few moments to review our debugging skills. The video below walks through the process of
-debugging code with Pry using the upcoming Hashketball lab. Although you haven't seen this lab
-yet, the concepts reviewed are applicable to all of the labs in this section (and beyond).
-Check out the [Using Pry][] lesson to review Pry further.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uv6fvdKXAnM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-[Debugging](https://youtu.be/uv6fvdKXAnM)
-
-Try using Pry in the next lab!
-
-[Using Pry]: https://github.com/learn-co-curriculum/reading-errors-and-debugging-using-pry
-
 ## Conclusion
 
 A vast number of problems have a solution that involves following the
