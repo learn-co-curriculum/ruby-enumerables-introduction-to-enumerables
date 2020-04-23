@@ -64,7 +64,7 @@ this:
 
 ```ruby
 def is_anyone_vegetarian?(list_of_dietary_restrictions)
-  # Given a collection of dietary restrictions (["lactose intollerant", "none", "allergic to peanuts", "vegetarian"])
+  # Given a collection of dietary restrictions (["lactose intolerant", "none", "allergic to peanuts", "vegetarian"])
   # If any of them are vegetarian
   # return `true`; else, return `false`
 end
