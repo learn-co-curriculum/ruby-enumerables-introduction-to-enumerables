@@ -116,10 +116,11 @@ well.
 
 ## Consult Ruby's Enumerable Documentation
 
-Ruby provides us _lots_ of Enumerable methods. This module _will not_ duplicate
-the documentation and teach each one to you. Part of becoming comfortable with
-programming is becoming comfortable with finding answers in the documentation.
-We'll get you started, but you need to own your own education.
+Ruby provides us _lots_ of Enumerable methods. While we will highlight some
+methods, we _will not_ duplicate the documentation and teach each one to you.
+Part of becoming comfortable with programming is becoming comfortable with
+finding answers in the documentation. We'll get you started, but you need to own
+your own education.
 
 To help make sure you grasp what kinds of methods follow the "Character of
 Enumerable Methods," consult Ruby's [Enumerable documentation][enumdoc]. Look
