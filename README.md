@@ -26,7 +26,7 @@ _Usually_, the result of any work being done on each element is collected. After
 every element is visited, the Enumerable either returns this new collection of
 results **or** accumulates them and returns a single value.
 
-**Note:** we say _usually_ because there is one exception - sometimes we to
+**Note:** we say _usually_ because there is one exception - sometimes we 
 perform some work using _each_ element but don't care about the results. An
 example of this would printing every element in an array to the terminal. In
 this case, we wouldn't need to bother with collecting or accumulating the
